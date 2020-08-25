@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linear Gradient</title>
+  <link rel="stylesheet" href="./gradient.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <section class="gradient">
+    <div class="header">
+      <h1>Linear Gradient</h1>
+      <h2 id="gradient-style"></h2>
+    </div>
+    <div class="gradient-container"></div>
+    <div class="controls-wrapper">
+      <div class="sliders sliders-first">
+        <div class="button">
+          <button data-random="0">Random</button>
+        </div>
+        <h2>First color</h2>
+        <span>Hue</span>
+        <input 
+          type="range" 
+          min="0" 
+          max="360" 
+          step="1" 
+          name="hue" 
+          class="hue-input" 
+          data-hue="0"
+        >
+        <span>Brightness</span>
+        <input 
+          type="range" 
+          min="0.01" 
+          max="0.99" 
+          step="0.01" 
+          name="brightness" 
+          class="bright-input" 
+          data-bright="0"
+        >
+        <span>Saturation</span>
+        <input 
+          type="range" 
+          min="0.01" 
+          max="1" 
+          step="0.01" 
+          name="saturation" 
+          class="sat-input" 
+          data-sat="0"
+        >
+        <span>ColorStop</span>
+        <input 
+          type="range" 
+          min="0" 
+          max="100" 
+          step="1" 
+          name="color-stop" 
+          class="stop-input" 
+          data-sat="0"
+          value="0"
+        >
+      </div>
+      <div class="sliders sliders-second">
+        <div class="button">
+          <button data-random="1">Random</button>
+        </div>
+        <h2>Second color</h2>
+        <span>Hue</span>
+        <input 
+          type="range" 
+          min="0" 
+          max="360" 
+          step="1" 
+          name="hue" 
+          class="hue-input" 
+          data-hue="1"
+        >
+        <span>Brightness</span>
+        <input 
+          type="range" 
+          min="0.01" 
+          max="0.99"  
+          step="0.01" 
+          name="brightness" 
+          class="bright-input" 
+          data-bright="1"
+        >
+        <span>Saturation</span>
+        <input 
+          type="range" 
+          min="0.01" 
+          max="1" 
+          step="0.01" 
+          name="saturation" 
+          class="sat-input" 
+          data-sat="1"
+        >
+        <span>ColorStop</span>
+        <input 
+          type="range" 
+          min="0" 
+          max="100" 
+          step="1" 
+          name="color-stop" 
+          class="stop-input" 
+          data-sat="1"
+          value="100"
+        >
+      </div>
+      <div class="slider-angle">
+        <h2>Angle</h2>
+        <span id="angle-value"></span>
+        <input 
+          type="range" 
+          min="-360" 
+          max="360" 
+          step="1" 
+          name="angle" 
+          class="angle-input" 
+          data-angle="0"
+        >
+      </div>
+    </div>
+  </section>
+
+  <div class="background">
+    <svg width="205" height="211" viewBox="0 0 205 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <clipPath id="cardPath">
+      <path d="M205 93.7043C199.102 89.5 191.887 87.0272 184.095 87.0272C174.494 87.0272 165.768 90.7818 159.303 96.9044C152.702 88.3966 142.386 82.9222 130.792 82.9222C121.682 82.9222 113.36 86.3023 107.01 91.8781V183.907C107.01 193.429 114.72 201.148 124.231 201.148C133.742 201.148 141.452 193.429 141.452 183.907H151.293C151.293 198.87 139.177 211 124.231 211C109.286 211 97.1697 198.87 97.1697 183.907V91.1793C90.9311 86.0211 82.9311 82.9222 74.2082 82.9222C62.6144 82.9222 52.2978 88.3966 45.6965 96.9044C39.2318 90.7818 30.5063 87.0272 20.9049 87.0272C13.113 87.0272 5.89799 89.5 0 93.7043C4.71079 41.1719 48.8029 0 102.5 0C156.197 0 200.289 41.1719 205 93.7043Z" fill="#C4C4C4"/>
+      </clipPath>
+      </svg>
+  </div>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js" integrity="sha256-+Q/z/qVOexByW1Wpv81lTLvntnZQVYppIL1lBdhtIq0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js" integrity="sha256-gX8uuyxN8stSMHWO9arnnKyenTOALaVAcVB3b6P87e4=" crossorigin="anonymous"></script>
+  <script src="./gradient.js"></script>
+</body>
+</html>

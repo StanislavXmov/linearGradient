@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(51, 51, 51);
+}
+.gradient {
+  margin: 0 auto;
+  padding-top: 12px;
+  width: 780px;
+  height: 100%;
+}
+
+.header {
+  border: 2px solid rgb(51, 51, 51);
+  border-radius: 10px;
+  margin-bottom: 12px;
+  background: #fff;
+}
+
+h1 {
+  font-size: 42px;
+  text-align: center;
+}
+
+#gradient-style {
+  text-align: center;
+  font-size: 18px;
+  padding: 4px;
+  font-family: 'Inconsolata', monospace;
+}
+
+.gradient-container {
+  width: 100%;
+  height: 200px;
+  border: 2px solid rgb(51, 51, 51);
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.controls-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 2px solid rgb(51, 51, 51);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.sliders-first, .sliders-second {
+  position: relative;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.sliders h2 {
+  margin-bottom: 8px;
+}
+
+.slider-angle {
+  width: 60%;
+  padding: 1rem;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 1rem 0;
+  width: 100%;
+  position: relative;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: rgb(236, 236, 236);
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  background: rgb(51, 51, 51);
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  padding: 6px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background: rgb(101, 101, 101);
+}
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 205px;
+  height: 211px;
+  clip-path: url("#cardPath");
+  z-index: -1;
+  /* animation Off */
+  /* animation: umbrella 2.5s ease infinite alternate; */
+}
+
+/* @keyframes umbrella {
+  from {
+    transform: translateY(0) translateX(0);
+    
+  }
+  to {
+    transform: translateY(calc(100vh - 100%)) translateX(calc(100vw - 100%));
+  }
+} */
+
+
+
